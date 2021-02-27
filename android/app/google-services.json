@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "754891082726",
+    "project_id": "netravellers-84241",
+    "storage_bucket": "netravellers-84241.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754891082726:android:55fffa7e655929b2b4e427",
+        "android_client_info": {
+          "package_name": "com.example.netravellers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754891082726-81pjb6e2ag5gc637jvjq7nbcenedkt48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOSetEgnZCqAmYYhQAsGZ4t-VkIz-xk0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754891082726-81pjb6e2ag5gc637jvjq7nbcenedkt48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
