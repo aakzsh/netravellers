@@ -21,12 +21,8 @@ class _MainscreenState extends State<Mainscreen> {
      appBar: PreferredSize(
          preferredSize: Size.fromHeight(150.0), // here the desired height
          child: AppBar(
-           backgroundColor: Colors.yellow,
-           flexibleSpace: Container(
-height: 100,
-             color: Colors.red,
-
-           ),
+           backgroundColor: Colors.deepPurpleAccent[100],
+           flexibleSpace: Image.asset("assets/dubai.png"),
            shape:  RoundedRectangleBorder(
              borderRadius: BorderRadius.vertical(bottom: Radius.circular( 50.0)),
 
@@ -35,48 +31,70 @@ height: 100,
      ),
 
         body: Container(
+width: double.infinity,
           color: Colors.lightBlueAccent[200],
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
+          child:  Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
 
-              Text("Pehla cloud"),
+             Row(
+               mainAxisAlignment: MainAxisAlignment.end,
+               children: <Widget>[
+                 Image.asset("assets/1.png", height: 70.0,),
+               ],
+             ),
+Column(
+  crossAxisAlignment: CrossAxisAlignment.end,
+  children: <Widget>[
+    Text("Let's ask a few questions",style: TextStyle(fontSize: 25.0, color: Colors.white), ),
+    Text("takes less than a minute",style: TextStyle(fontSize: 20.0, color: Colors.white),),
+    MaterialButton(
 
-              Text("Let's ask a few questions",style: TextStyle(fontSize: 20.0),),
-              Text("takes less than a minute",style: TextStyle(fontSize: 15.0),),
-              MaterialButton(
+      elevation: 0.0,
+      child: Text("proceed",
+        style: TextStyle(
+            fontSize: 20.0,
+            color: Colors.white
+        ),),
+      onPressed: (){
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            //press karne pe navigate karne ke liye
+            builder: (context) => SecondPage(),
+          ),
+        );
+      },
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(35.0),
+        side: BorderSide(color: Colors.white, width: 2.5),
 
-                elevation: 0.0,
-                child: Text("proceed",
-                  style: TextStyle(
-                      fontSize: 20.0,
-                      color: Colors.white
-                  ),),
-                onPressed: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      //press karne pe navigate karne ke liye
-                      builder: (context) => SecondPage(),
-                    ),
-                  );
-                },
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(35.0),
-                  side: BorderSide(color: Colors.white, width: 2.5),
-
-                ),
-                height: 40,
-                minWidth: 200,
+      ),
+      height: 40,
+      minWidth: 200,
 
 
-                color: Colors.black.withOpacity(0.0),
+      color: Colors.black.withOpacity(0.0),
 
+    ),
+  ],
+),
+
+
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Image.asset("assets/2.png", height: 70.0,),
+                ],
               ),
-
-
-              Text("dusra cloud"),
-              Text("teesra cloud"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Image.asset("assets/3.png", height: 70.0,),
+                ],
+              ),
             ],
           ),
         ),
