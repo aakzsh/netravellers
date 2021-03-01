@@ -63,11 +63,11 @@ width: double.infinity,
                          crossAxisAlignment: CrossAxisAlignment.end,
                          children: <Widget>[
                            Text("Let's ask a few questions",style: TextStyle(fontSize: 25.0, color: Colors.white), ),
-                           Text("takes less than a minute",style: TextStyle(fontSize: 20.0, color: Colors.white),),
+                           Text("Takes less than a minute",style: TextStyle(fontSize: 20.0, color: Colors.white),),
                            MaterialButton(
 
                              elevation: 0.0,
-                             child: Text("procieed $i",
+                             child: Text("Proceed $i",
                                style: TextStyle(
                                    fontSize: 20.0,
                                    color: Colors.white
@@ -107,7 +107,7 @@ width: double.infinity,
                   MaterialButton(
 
                     elevation: 0.0,
-                    child: Text("proceed",
+                    child: Text("Proceed",
                       style: TextStyle(
                           fontSize: 20.0,
                           color: Colors.white
