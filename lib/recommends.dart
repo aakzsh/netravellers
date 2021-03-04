@@ -16,10 +16,12 @@ class _recommendationState extends State<recommendation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightBlueAccent[200],
       appBar: AppBar(
         title: Text("You would love these places!"),
       ),
       body: Center(
+
         child: Container(
 
           color: Colors.lightBlueAccent[200],
@@ -28,7 +30,7 @@ class _recommendationState extends State<recommendation> {
             child: Column(
 
               children: <Widget>[
-
+              cardtoshow(paris),
 
 
               ],

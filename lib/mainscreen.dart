@@ -21,7 +21,6 @@ class _MainscreenState extends State<Mainscreen> {
 
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-
         backgroundColor: Colors.lightBlueAccent[200],
      appBar: PreferredSize(
          preferredSize: Size.fromHeight(150.0), // here the desired height
@@ -116,7 +115,7 @@ width: double.infinity,
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          //press karne pe navigate karne ke liye
+                          //navigation to other page
                           builder: (context) => recommendation(),
                         ),
                       );

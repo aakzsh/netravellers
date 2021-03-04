@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "NetTravellers",
+      title: "Netravellers",
       theme: ThemeData(
 
         primarySwatch: Colors.lightBlue,
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      //press karne pe navigate karne ke liye
+                      //navigation to other page
                       builder: (context) => Mainscreen(),
                     ),
                   );
