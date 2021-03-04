@@ -1,3 +1,11 @@
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:netravellers/recommends.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+
+import 'secondpage.dart';
+
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -10,14 +18,54 @@ import 'package:flip_card/flip_card.dart';
 var template = ["city", "country", "temp", "url", "budget", "note"];
 
 var paris = ["Paris", "France", "11.7 C", "https://i.ibb.co/DYcSJDy/paris.png", "budget", "History, culture, food and fashion in one picture-perfect city."];
+var aires = [];
+var athens = [];
+var auckland = [];
+var bali = [];
+var bangkok = [];
+var bath=[];
+var barcelona=[];
+var beijing=[];
+var berlin=[];
+var bruges=[];
+var cairo=[];
+var capetown=[];
+var casablanca=[];
+var copenhagen=[];
+var dublin=[];
+var dubai=[];
+var edinburgh=[];
+var florence=[];
+var helsinki=[];
+var hongkong=[];
+var honolulu=[];
+var istanbul=[];
+var jerusalem=[];
+var krakow=[];
+var lisbon=[];
+var london=[];
+var losangeles=[];
+var madrid=[];
+var mumbai=[];
+var munich=[];
+var nyc=[];
+var osaka=[];
+var oslo=[];
+var qatar=[];
+var rio=[];
+var rome=[];
+var seattle=[];
+var seoul=[];
+var shanghai=[];
+var singapore=[];
+var tokyo=[];
+var toronto=[];
+var vegas=[];
+var venice=[];
+var vienna=[];
+var delhi=[];
 
 
-
-f1(){
-  return Text(
-    "hello",
-  );
-}
 
 
 
