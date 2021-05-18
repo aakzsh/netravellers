@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:netravellers/flights.dart';
 import 'data.dart';
+import 'mainscreen.dart';
 
 class recommendation extends StatefulWidget {
   @override
@@ -24,11 +25,26 @@ class _recommendationState extends State<recommendation> {
             child: Column(
               children: <Widget>[
                 cardtoshow(paris),
+                cardtoshow(bath),
+                cardtoshow(copenhagen),
+                cardtoshow(delhi),
+                // cardtoshow(paris),
+                // cardtoshow(delhi),
+                // cardtoshow(nyc),
+                // cardtoshow(bath),
+                // cardtoshow(mumbai),
+                functoshow(),
               ],
             ),
           ),
         ),
       ),
     );
+  }
+}
+
+functoshow() {
+  for (int i = 1; i <= 20; i++) {
+    return cardtoshow(lisbon);
   }
 }

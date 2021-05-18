@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 // import 'package:netravellers/recommends.dart';
 // import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_question_answer_widget/flutter_question_answer_widget.dart';
+import 'package:netravellers/recommends.dart';
 
 // import 'secondpage.dart';
 
@@ -154,7 +155,7 @@ class _MainscreenState extends State<Mainscreen> {
                       context,
                       MaterialPageRoute(
                         //navigation to other page
-                        builder: (context) => Mainscreen(),
+                        builder: (context) => recommendation(),
                       ),
                     );
                   },
@@ -175,8 +176,11 @@ class _MainscreenState extends State<Mainscreen> {
   }
 }
 
+var finalcity = ["mumbai", "delhi", "rio", "cairo", "bali"];
+
 funcpred() {
   if (_value1 == "Anywhere") {
+    var finalcity = ["mumbai", "nyc", "lisbon", "bangkok", "osaka"];
   } else if (_value1 == "Asia Pacific") {
   } else if (_value1 == "Australia") {
   } else if (_value1 == "Africa") {
